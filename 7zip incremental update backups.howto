@@ -1,6 +1,8 @@
+## incremental 7zippage
 7z u -p0q3r2x0y2z0w2 \\UNCBackupDestinationPath\Backup.7z C:\BackupSource*
 
-
+## or with timestamp from powershell ( as seen run from a command prompt )
+powershell "$datecode = get-date -format yyyyMMdd_HHmm;7z u -p0q3r2x0y2z0w2 BACKUP_STORAGE:\dest\name_$datecode.7z toBeBackedUpLocation:\userData\*.*"
 
 p | File exists in archive, but is not matched with wildcard.   Exists, but is   not matched 
 q | File exists in archive, but doesn't exist on disk.
