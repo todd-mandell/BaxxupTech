@@ -1,0 +1,17 @@
+7z u -p0q3r2x0y2z0w2 \\UNCBackupDestinationPath\Backup.7z C:\BackupSource*
+
+
+
+p | File exists in archive, but is not matched with wildcard.   Exists, but is   not matched 
+q | File exists in archive, but doesn't exist on disk.
+r | File doesn't exist in archive, but exists on disk.
+x | File in archive is newer than the file on disk.
+y | File in archive is older than the file on disk.
+z | File in archive is same as the file on disk
+w | Can not be detected what file is newer (times are the same, sizes are different)
+
+<action> | Description 
+0 | Ignore file (don't create item in new archive for this file) 
+1 | Copy file (copy from old archive to new) 
+2 | Compress (compress file from disk to new archive) 
+3 | Create Anti-item (item that will delete file or directory during extracting). 
